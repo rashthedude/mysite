@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Rashid', content: 'He is the man around town & cool' });
+  res.render('index', { title: 'Rashid', content: 'Rashid is a back-end coder & future mobile developer' });
 };
