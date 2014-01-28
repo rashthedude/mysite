@@ -33,21 +33,6 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 
-// app.get('/pdf', function(req, res) {
-// 	console.log(process.cwd());
-// 	fs.readFile('some.pdf', function(err, data) {
-// 		if(err) {
-// 			//res.json({'status': 'error'});
-// 			console.log('this is the error',err);
-// 		} else{
-// 			res.writeHead(200, {'Content-Type': 'application/pdf'});
-// 			res.write(data);
-// 			res.end();
-// 		}
-// 	});
-// 	//res.download('some.pdf', 'public/pdf');
-
-// });
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
