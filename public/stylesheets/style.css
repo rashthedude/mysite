@@ -24,3 +24,7 @@ p {
 	font-size: 33px;
 	margin: 0;
 }
+
+.tooltip {
+	display: inline-block;
+}
